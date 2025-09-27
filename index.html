@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linux Command Installer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    .command-box {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+      position: relative;
+      font-family: monospace;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    button.copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    button.copy-btn:hover {
+      background: #45a049;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Linux Command Installer</h1>
+    
+    <div class="command-box" id="cmd1">
+      bash &lt;(curl -sSL https://raw.githubusercontent.com/djexoxd/I-LOVE-AAYUSHA/main/install.sh)
+      <button class="copy-btn" onclick="copyCommand('cmd1')">Copy</button>
+    </div>
+    
+    <div class="command-box" id="cmd2">
+      bash &lt;(curl -s https://raw.githubusercontent.com/JishnuTheGamer/puffer-panel/refs/heads/main/install)
+      <button class="copy-btn" onclick="copyCommand('cmd2')">Copy</button>
+    </div>
+
+    <footer>
+      &copy; 2025 Linux Command Installer | Made with ❤️
+    </footer>
+  </div>
+
+  <script>
+    function copyCommand(id) {
+      const cmdBox = document.getElementById(id);
+      const text = cmdBox.textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Command copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>

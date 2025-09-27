@@ -15,65 +15,22 @@ ascii_art="
 -------------------------------------------------------------------------------------------------------
 
 
-
-
 "
-echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"
-  echo_message(I LOVE U AAYUSHA) {
-  echo -e "\033[1;33m$1\033[0m"       
+print_animated(I LOVE U AAYUSHA ) {
+  local text="$1"
+  local color="$2"
+  local delay=0.05  # delay in seconds between characters
+
+  # Loop through each character
+  for (( i=0; i<${#text}; i++ )); do
+    # Print one character with color, no newline
+    echo -ne "${color}${text:$i:1}${NC}"
+    sleep $delay
+  done
+  echo # newline after finished
+}
+ "
+
 
 
 # Define ASCII art

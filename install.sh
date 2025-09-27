@@ -14,18 +14,71 @@ ascii_art="
 
 -------------------------------------------------------------------------------------------------------
 
-.
-
-.
-
-.
-
-.
-
-.
 
 
-__________                      .__    .__                 __         .__  .__   
+
+"
+echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"
+  echo_message(I LOVE U AAYUSHA) {
+  echo -e "\033[1;33m$1\033[0m"       
+
+
+# Define ASCII art
+ascii_art="
+       __________                      .__    .__                 __         .__  .__   
 \______   \_____    ____   ____ |  |   |__| ____   _______/  |______  |  | |  |  
  |     ___/\__  \  /    \_/ __ \|  |   |  |/    \ /  ___/\   __\__  \ |  | |  |  
  |    |     / __ \|   |  \  ___/|  |__ |  |   |  \\___ \  |  |  / __ \|  |_|  |__
@@ -33,47 +86,6 @@ __________                      .__    .__                 __         .__  .__
                 \/     \/     \/               \/     \/            \/           
 
 "
-
-
-
-echo "I LOVE U !" 
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-echo "I LOVE U !"
-
 
 
 # Colors

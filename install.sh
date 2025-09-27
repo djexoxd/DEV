@@ -19,7 +19,7 @@ ascii_art= "
 
 
 
-print_animated() {
+ print_animated() {
   local text="$1"
   local color="$2"
   local delay=0.05
@@ -35,84 +35,13 @@ print_animated() {
 RED='\033[0;31m'
 NC='\033[0m' # No color
 
-print_animated "I love Aayusha" "$RED"
-
-
-
-
-"
-
-
-print_animated() {
-  local text="$1"
-  local color="$2"
-  local delay=0.05
-
-  for (( i=0; i<${#text}; i++ )); do
-    echo -ne "${color}${text:$i:1}${NC}"
-    sleep $delay
-  done
-  echo
-}
-
-# Colors
-RED='\033[0;31m'
-NC='\033[0m' # No color
-
-print_animated "I love Aayusha" "$RED"
-
-
-
-
-"
-
-
-print_animated() {
-  local text="$1"
-  local color="$2"
-  local delay=0.05
-
-  for (( i=0; i<${#text}; i++ )); do
-    echo -ne "${color}${text:$i:1}${NC}"
-    sleep $delay
-  done
-  echo
-}
-
-# Colors
-RED='\033[0;31m'
-NC='\033[0m' # No color
-
-print_animated "I love Aayusha-" "$RED"
-
-
-
-"
-
-
-print_animated() {
-  local text="$1"
-  local color="$2"
-  local delay=0.05
-
-  for (( i=0; i<${#text}; i++ )); do
-    echo -ne "${color}${text:$i:1}${NC}"
-    sleep $delay
-  done
-  echo
-}
-
-# Colors
-RED='\033[0;31m'
-NC='\033[0m' # No color
-
-print_animated "I love Aayusha" "$RED"
+print_animated "I love Aayusha" "$YELLOW" 
 
 
 
 
 
-# Define ASCII art
+ " # Define ASCII art
 ascii_art= "
        __________                      .__    .__                 __         .__  .__   
 \______   \_____    ____   ____ |  |   |__| ____   _______/  |______  |  | |  |  

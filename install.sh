@@ -15,21 +15,29 @@ ascii_art="
 -------------------------------------------------------------------------------------------------------
 
 
+
 "
-print_animated(I LOVE U AAYUSHA ) {
+
+
+print_animated() {
   local text="$1"
   local color="$2"
-  local delay=0.05  # delay in seconds between characters
+  local delay=0.05
 
-  # Loop through each character
   for (( i=0; i<${#text}; i++ )); do
-    # Print one character with color, no newline
     echo -ne "${color}${text:$i:1}${NC}"
     sleep $delay
   done
-  echo # newline after finished
+  echo
 }
- "
+
+# Colors
+RED='\033[0;31m'
+NC='\033[0m' # No color
+
+print_animated "I love burger" "$RED"
+
+
 
 
 

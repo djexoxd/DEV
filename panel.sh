@@ -1,22 +1,35 @@
+#!/bin/bash
 
-# ASCII Art
-ascii_art="
+# Print ASCII Art
+echo " -.___  .__                                  _____                            .__          ._."
+echo "|   | |  |   _______  __ ____    __ __    /  _  \ _____  ___.__.__ __  _____|  |__ _____ | |"
+echo "|   | |  |  /  _ \  \/ // __ \  |  |  \  /  /_\  \\__  \<   |  |  |  \/  ___/  |  \\__  \| |"
+echo "|   | |  |_(  <_> )   /\  ___/  |  |  / /    |    \/ __ \\___  |  |  /\___ \|   Y  \/ __ \\|"
+echo "|___| |____/\____/ \_/  \___  > |____/  \____|__  (____  / ____|____//____  >___|  (____  /_"
+echo "                            \/                  \/     \/\/               \/     \/     \/\/"
 
-      .___  .__                                  _____                            .__          ._.
-|   | |  |   _______  __ ____    __ __    /  _  \ _____  ___.__.__ __  _____|  |__ _____ | |
-|   | |  |  /  _ \  \/ // __ \  |  |  \  /  /_\  \\__  \<   |  |  |  \/  ___/  |  \\__  \| |
-|   | |  |_(  <_> )   /\  ___/  |  |  / /    |    \/ __ \\___  |  |  /\___ \|   Y  \/ __ \\|
-|___| |____/\____/ \_/  \___  > |____/  \____|__  (____  / ____|____//____  >___|  (____  /_
-                            \/                  \/     \/\/               \/     \/     \/\
-                                 
-"
+# Message
+echo ""
+echo "I love her!!"
+echo "pufferpanel insall !"
 
-echo "i love u aayusha!"
- 
-# Install puffer panel
-apt update
-apt install sudo
-apt install systemctl
-curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh?any=true | sudo bash
-sudo apt update
-sudo apt-get install pufferpanel
+# Update packages
+sudo apt update -y
+
+# Install required packages
+sudo apt install -y curl sudo gnupg
+
+# Add the PufferPanel APT repository
+curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh | sudo bash
+
+# Update again after adding new repo
+sudo apt update -y
+
+# Install PufferPanel
+sudo apt install -y pufferpanel
+
+# Add a user for PufferPanel (interactive setup)
+sudo pufferpanel user add
+
+# Enable and start the PufferPanel service
+sudo systemctl enable --now pufferpanel
